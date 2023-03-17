@@ -6,8 +6,8 @@ const Intro = () => {
       <header id="welcome-section">
         <div className="container">
           <h1>
-            <span className="line">I do</span>
-            <span className="line">web development</span>
+            <span className="line">I build</span>
+            <span className="line">web applications</span>
             <span className="line">
               <span className="color">&</span> code.
             </span>

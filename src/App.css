@@ -184,29 +184,89 @@ a:hover {
   display: flex;
   gap: 35px;
 }
-.name-heading {
-  font-size: 75px;
-}
-.brand-statement {
-  color: #0b0500;
-  opacity: 85%;
-  padding-left: 10px;
-}
-.profile {
-  width: 25vw;
-  border-radius: 50%;
-}
+
 h2 {
   font-size: 30px;
 }
-.hello,
+
 .about-text {
   color: #0b0500;
 }
-.hello,
+
 .title {
   padding-left: 10px;
+  font-size: 40px;
+  color: #005f6e;
 }
+
+#about-header .container {
+  width: fit-content;
+  position: absolute;
+  opacity: 0;
+  transform: translate(75%, 0);
+  animation: text-fade-in 1000ms 800ms forwards;
+}
+
+#about-header .container h1 {
+  font-size: 2rem;
+  font-style:  bold;
+  font-family: 'Montserrat Alternates', sans-serif;
+  color: #005f6e;
+  line-height: 3rem;
+}
+
+#about-header .container h1 .line:first-child {
+  margin-left: 1rem;
+}
+
+#about-header .container h1 .line:last-child {
+  margin-left: 5rem;
+}
+
+.about-container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 10px 30px 10px;
+  margin: 30px;
+}
+
+.about-text {
+  padding: 20px;
+  display: block;
+  font-style: bold;
+  text-align:justify;
+}
+.about-text h3 {
+  font-size: 20px;
+  font-family: 'Montserrat Alternates', sans-serif;
+  padding: 20px;
+  border: 3px solid #005f6e;
+  border-radius: 5%;
+  background-color: antiquewhite;
+  color: black;
+}
+
+.about-img {
+  padding: 20px;
+}
+.about-profile, .about-fun {
+  width: 20vw;
+  border-radius: 25%;
+  /* padding: 10px; */
+  border: 3px solid #fafafa;
+  /* border: 3px solid rgb(209, 126, 90); */
+  margin: 20px;
+}
+
+.h-line {
+  border-bottom: 10px dotted #005f6e;
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
 .icons {
   display: flex;
   gap: 4vw;
@@ -214,8 +274,9 @@ h2 {
   align-items: center;
 }
 .icon-item img {
-  background-color: #fff9fb;
+  background-color: antiquewhite;
   border-radius: 50%;
+  border: 2px solid #fafafa;
 }
 .project-list {
   display: flex;
