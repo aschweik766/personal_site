@@ -324,8 +324,9 @@ h2 {
   color: #fafafa;
 }
 
-.contact-link:hover {
+.contacts a:hover {
   color: #12deae;
+  text-decoration: underline;
 }
 
 .footer {
