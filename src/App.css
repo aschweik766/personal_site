@@ -25,7 +25,6 @@ body {
 #welcome-section .container {
   width: fit-content;
   position: absolute;
-  right: 0;
   top: 50%;
   right: 25%;
   opacity: 0;
@@ -136,6 +135,7 @@ body {
   flex-direction: row;
   padding: 20px;
   font-size: 30px;
+  font-weight: bold;
   color: #fafafa;
   text-decoration: none;
 }
@@ -236,7 +236,7 @@ h2 {
 }
 
 .project-block {
-  background: linear-gradient(#e66465, #9198e5);
+  background: linear-gradient(#6cba8d, #005f6e);
   opacity: .8;
   border: #fafafa solid 3px;
   border-radius: 3%;
@@ -246,40 +246,11 @@ h2 {
 .project-item {
   width: fit-content;
   height: 22vh;
-  border: 2px solid #12deae;
+  border: 2px solid #022136;
   border-radius: 10px 10px 0px 0px;
   overflow: hidden;
 }
-.browser {
-  height: 20px;
-  background-color: #efeaea;
-  display: flex;
-  align-items: center;
-}
 
-.browser div {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  margin: 2px;
-}
-
-.browser p {
-  padding-left: 2vw;
-  font-family:'Montserrat Alternates', sans-serif;
-  color: #022136;
-  font-size: 1rem;
-}
-
-.circle1 {
-  background-color: red;
-}
-.circle2 {
-  background-color: #ffd447;
-}
-.circle3 {
-  background-color: rgb(25, 175, 25);
-}
 .project-item img {
   width: 100%;
   transition: all 10s ease;
@@ -297,6 +268,7 @@ h2 {
   width: 35%;
   margin: 30px;
 }
+
 .link-block {
   display: flex;
   justify-content: space-around;
@@ -304,12 +276,12 @@ h2 {
 .project-github {
   color: #fafafa;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1rem;
   text-decoration: none;
 }
 .project-description {
   font-size: 18px;
-  padding: 10px;
+  padding: 4px;
   color: white;
   font-weight: bold;
   justify-content: center;
@@ -317,8 +289,19 @@ h2 {
   flex-direction: column;
   align-items: center;
   font-family: 'Montserrat Alternates', sans-serif;
-
 }
+
+.project-description .tools {
+  color: #79edb1;
+  font-size: 30px;
+  text-align: center;
+}
+
+.project-description .info {
+  margin-left: 8px;
+  padding: 4px;
+}
+
 .contact {
   text-align: center;
   padding-bottom: 10vh;
@@ -361,91 +344,110 @@ h2 {
 }
 
 /* Responsive CSS */
-@media (max-width: 620px) and (orientation: portrait) {
+@media only screen and (max-width: 620px), (orientation: portrait) {
   .navigation {
     position: fixed;
     width: 100%;
-    font-size: small;
-    z-index: 1;
+    font-size: 20px;
+    z-index: 2;
   }
-  .intro {
+
+  #basic-navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .navbar-link {
+    padding: 10px 10px 0px 10px;
+  }
+
+  .navbar-text {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  } 
+
+  .social-icon {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .name {
+    padding: 0px;
+    font-size: 22px;
+  }
+
+  #welcom-section {
+    display: block;
+    width: fit-content;
+    z-index: unset;
+    z-index: 0;
+  }
+
+  #welcome-section .container {
+    top: 50%;
+    right: 25%;
+    transform: translate(20%, -40%);
+  }
+
+  #welcome-section .container h1 {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3rem;
+  }
+
+  .banner {
+    padding: 20px;
     display: flex;
     flex-direction: column;
   }
-  .logo {
-    width: 100px;
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
   }
-  .social-logo {
-    height: 30px;
-    width: 30px;
-  }
-  .navbar-text {
+
+  .about-text {
+    padding: 0px;
     display: block;
     text-align: center;
   }
-  .social-icon {
+
+  .about-img {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
   }
-  .me-auto {
-    width: 215px;
+
+  .about-profile, .about-fun {
+    width: 70%
   }
-  #home {
-    padding-top: 230px;
-    padding-left: 75px;
-  }
-  .name-heading {
-    font-size: 55px;
-  }
-  .title {
-    font-size: 30px;
-  }
-  .intro-text {
-    width: 500px;
-  }
-  .profile {
-    width: 35vw;
-  }
-  .hello,
-  .title {
-    padding-left: 5px;
-  }
-  .banner {
-    padding-left: 75px;
-  }
+
   #projects {
     flex-direction: column;
   }
-  #project-heading,
-  .project-github,
-  .contact {
-    padding-left: 90px;
-  }
-  .project-list {
-    flex-direction: column;
-  }
-  .project-block .project-github,
-  .project-description {
-    text-align: center;
-  }
-  #project1,
-  #project2,
-  #project3,
-  #project4,
-  #project5 {
-    width: 240px;
-  }
-  .project-item {
-    width: 250px;
-    height: 150px;
-  }
-  .footer {
-    box-sizing: unset;
-    /* position: fixed;
-    bottom: 0; */
-  }
-}
 
-@media (max-width: 620px) and (orientation: landscape) {
+  #project1, #project2, #project3, #project4 {
+    padding: 0px;
+    margin: 10px 0px;
+    width: 100%;
+  }
+  
+  .footer, .contact-cta {
+    font-size: 2rem;
+  }
+
+  .contacts .contact-link {
+    font-size: 20px;
+  }
+
+  .contacts a {
+    text-decoration: underline;
+  }
+
+
 }

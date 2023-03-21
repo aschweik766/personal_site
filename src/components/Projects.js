@@ -22,98 +22,63 @@ function Projects() {
 
         <div className='project-block' id='project1'>
           <div className='project-item'>
-            <div className='browser'>
-              <div className='circle1'></div>
-              <div className='circle2'></div>
-              <div className='circle3'></div>
-              <p className='project-title'>MoveIt HEP</p>
-            </div>
-            <a href='' target='_blank' rel='noreferrer' className='project-link'><img src={moveIt} alt='move it homepage'></img></a>
+            <div className='project-link'><img src={moveIt} alt='move it homepage'></img></div>
           </div>
           <div className='link-block'>
-
-            <a href='' target='_blank' rel='noreferrer' className='project-github'>Demo</a>
+            <a href='https://github.com/aschweik766/move-it-frontend' target='_blank' rel='noreferrer' className='project-github'>Demo</a>
             <a href='https://github.com/aschweik766/move-it-frontend' target='_blank' rel='noreferrer' className='project-github'>Github</a>
           </div>
-          <p className='project-description'><b>React, Node.js, custom API, Google Identity, MERN stack</b>
-            <br></br>
-            <br></br>
-             this application features clinically sourced exercise data for Physical Therapists to utilize on the job when sharing home exercise programs. Search functionality is included where therapist users can find, favorite and share exercise plans and videos for treatment purposes. 
+          <p className='project-description'><span className='tools'>Mongo, Express, React, Node.js</span>
+          <span className='info'>
+             This application features clinically sourced exercise data for Physical Therapists to utilize on the job when sharing home exercise programs. Search functionality of my custom exercise API is included where therapist users can find, favorite and share exercise plans and videos for treatment purposes.</span>
           </p>
         </div>
-
         <br></br>
-
         <div className='project-block' id='project2'>
           <div className='project-item'>
-            <div className='browser'>
-              <div className='circle1'></div>
-              <div className='circle2'></div>
-              <div className='circle3'></div>
-              <p className='project-title'>Align</p>
-            </div>
-            <a href='' target='_blank' rel='noreferrer' className='project-link'><img src={align} alt='align homepage'></img></a>
+            <div className='project-link'><img src={align} alt='move it homepage'></img></div>
           </div>
-          {/* <p className='project-title'>TherapyReady</p> */}
           <div className='link-block'>
             <a href='https://peaceful-sunshine-1cdc44.netlify.app/' target='_blank' rel='noreferrer' className='project-github'>Demo</a>
             <a href='https://github.com/aschweik766/breakfast-club-FrontEnd' target='_blank' rel='noreferrer' className='project-github'>Github</a>
           </div>
-          <p className='project-description'><b>Mongo, Express, React, Node.js, CSS</b>
-            <br></br>
-            an application that displays daily/monthly horoscope information, personal to the user, and includes a dating feature that utilizes swipe functionality
+          <p className='project-description'><span className='tools'>Mongo, Express, React, Node.js, CSS</span>
+            <span className='info'>
+            This application displays daily/monthly horoscope information personal to the user after account creation based on zodiac sign and birthdate information. It includes a dating feature that utilizes swipe functionality and suggests matches based on user's preferences and zodiac information.</span>
           </p>
         </div>
-
         <br></br>
-
         <div className='project-block' id='project3'>
           <div className='project-item'>
-            <div className='browser'>
-              <div className='circle1'></div>
-              <div className='circle2'></div>
-              <div className='circle3'></div>
-              <p className='project-title'>GardenPlanner</p>
-            </div>
-            <a href='https://evening-fjord-81831.herokuapp.com/gardenPlanner/Plant' target='_blank' rel='noreferrer' className='project-link'><img src={gardenPlanner} alt='garden homepage'></img></a>
+            <div className='project-link'><img src={gardenPlanner} alt='garden homepage'></img></div>
           </div>
-          {/* <p className='project-title'>TherapyReady</p> */}
           <div className='link-block'>
             <a href='https://evening-fjord-81831.herokuapp.com/gardenPlanner/Plant' target='_blank' rel='noreferrer' className='project-github'>Demo</a>
             <a href='https://github.com/aschweik766/gardenPlannerApp' target='_blank' rel='noreferrer' className='project-github'>Github</a>
           </div>
           <p className='project-description'>
-            <b>Mongo, Express, Node.js, EJS, Bootstrap</b>
-            <br></br>
-            an application that showcases a 'top picks' for gardening in containers database detailing the needs for plants to thrive during a garden season, how to plant, and where to shop.</p>
+            <span className='tools'>Mongo, Express, Node.js, EJS, Bootstrap</span>
+            <span className='info'>
+            This application that showcases a 'top picks' for gardening in containers database detailing the needs for plants to thrive during a garden season, how to plant, and where to shop. Users can interact and edit varieties, delete or add new ones to the site.</span></p>
         </div>
 
         <br></br>
         <div className='project-block' id='project4'>
           <div className='project-item'>
-            <div className='browser'>
-              <div className='circle1'></div>
-              <div className='circle2'></div>
-              <div className='circle3'></div>
-              <p className='project-title'>Sequence It</p>
-            </div>
-            <a href='https://aschweik766.github.io/sequenceItGame/startpage.html' target='_blank' rel='noreferrer' className='project-link'><img src={sequenceIt} alt='Sequence It homepage'></img></a>
+            <div className='project-link'><img src={sequenceIt} alt='Sequence It homepage'></img></div>
           </div>
-          {/* <p className='project-title'>TherapyReady</p> */}
           <div className='link-block'>
             <a href='https://aschweik766.github.io/sequenceItGame/startpage.html' target='_blank' rel='noreferrer' className='project-github'>Demo</a>
             <a href='https://github.com/aschweik766/sequenceItGame' target='_blank' rel='noreferrer' className='project-github'>Github</a>
           </div>
           <p className='project-description'>
-            <b>JavaScript, HTML, CSS</b>
-            <br></br>
-            a drag and drop game using HTML, CSS, and Vanilla JavaScript. The application renders in the browser, implements DOM manipulation and is constructed by functions</p>
+            <span className='tools'>HTML, CSS, Vanilla Javascript</span>
+            <span className='info'>This drag and drop education game uses HTML, CSS, and Vanilla JavaScript. The application renders in the browser, implements DOM manipulation and is constructed by functions. Designed for users learning safety tasks for daily living across 2 levels.
+            </span>
+            </p>
         </div>
       </div>
-   
-
     </motion.div>
-
        <div class="h-line"></div>
     </>
   )
