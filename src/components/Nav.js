@@ -40,6 +40,7 @@ function NavBar() {
                             <a href='https://github.com/charnaye95/' target='_blank' rel='noreferrer' className='github-link'><img src={github} alt='' className='social-logo'></img></a>
                             <a href='https://www.linkedin.com/in/aschweikhard/' target='_blank' rel='noreferrer' className='github-link'><img src={linkedin} alt='' className='social-logo'></img></a>
                         </div>
+                        <div className='name'>Ashley Schweikhard</div>
                         {/* <a href={resume} target='_blank' rel='noreferrer' className='resume navbar-link'>Resume</a> */}
                     </span>
                 </Navbar.Collapse>

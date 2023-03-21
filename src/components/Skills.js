@@ -20,13 +20,14 @@ import iconCPlus from '../assets/icons/icons8-c++.svg';
 import iconHeroku from '../assets/icons/icons8-heroku.svg';
 
 const Skills = () => {
-  return (
+  return (     
+  <>
    <motion.div 
    className='banner' id='skills'
    whileInView={{opacity: [0, 1]}}
    transition={{duration: 1}}>
     <div>
-      <h2>Skills</h2>
+      <h2 className='title'>Skills</h2>
     </div>
 
     <div className='skills-container'>
@@ -161,6 +162,9 @@ const Skills = () => {
     </div>
 
    </motion.div>
+     <div class="h-line"></div>
+
+     </>
   )
 }
 

@@ -4,7 +4,7 @@ import Contact from './Contact'
 const Footer = () => {
   return (
     <div className='footer'>        
-         <div>Contact me!</div>
+         <div className='contact-cta'>Contact Me!</div>
         <Contact/>
     </div>
   )
